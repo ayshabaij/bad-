@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "59fddb92-8f17-4b99-813d-a429a3bf7031",
+		"name": "Robot_App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/robot/1/orders",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"commands\": [ \"PLACE 1,2,EAST\", \"MOVE\",\"MOVE\",\"LEFT\",\"MOVE\",\"REPORT\"]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/robot/1/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"robot",
+						"1",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/robot/1/orders",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"commands\": [ \"PLACE 0,0,NORTH\", \"LEFT\",\"REPORT\"]\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/robot/1/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"robot",
+						"1",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/robot/1/orders",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"commands\": [ \"PLACE 0,0,NORTH\", \"MOVE\",\"REPORT\"]\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/robot/1/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"robot",
+						"1",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
